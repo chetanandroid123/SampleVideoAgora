@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SampleAgoraProject</string>
+    <string name="agora_app_id">b8ca5cd30864484b8e71c186fa3cc507</string>
+    <string name="agora_access_token">006b8ca5cd30864484b8e71c186fa3cc507IADbf9qCWCOdgCHXWK5+F0mE4chNbKLoZCXqM6W5kOGLC5pjTicAAAAAEAC4541oITLtYAEAAQAiMu1g</string>
+</resources>

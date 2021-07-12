@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_video_chat_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_remote_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" />
+
+    <FrameLayout
+        android:id="@+id/fl_local_view"
+        android:layout_width="160dp"
+        android:layout_height="240dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@android:color/darker_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+
+        <ImageView
+            android:id="@+id/img_video_mute"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:onClick="onLocalVideoMuteClicked"
+            android:src="@drawable/ic_baseline_videocam_off_24" />
+
+        <ImageView
+            android:id="@+id/img_audio_mute"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_video_mute"
+            android:onClick="onLocalAudioMuteClicked"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_baseline_mic_none_24" />
+
+        <ImageView
+            android:id="@+id/img_camera_clicked"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:onClick="onSwitchCameraClicked"
+            android:layout_toRightOf="@+id/img_audio_mute"
+            android:src="@drawable/ic_baseline_switch_camera_24" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:onClick="onEncCallClicked"
+            android:layout_toRightOf="@+id/img_camera_clicked"
+            android:src="@drawable/ic_baseline_close_24" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
